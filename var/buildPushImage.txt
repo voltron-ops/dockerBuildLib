@@ -1,0 +1,3 @@
+This var requires a Map:
+1. name of "registry" and 
+2. "dockerID" which is the credentialID of dockerhub credentials.
