@@ -1,4 +1,4 @@
-def call(MAP config = [:]){
+def call(Map config = [:]){
     def dockerImage = docker.build("${config.registry}:${env.BUILD_ID}", '.')
     docker.withRegistry('https://registry.hub.docker.com', ${config.dockerID}){
         dockerImage.push()
