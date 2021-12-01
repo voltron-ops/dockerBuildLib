@@ -4,5 +4,4 @@ def call(Map config = [:]){
         dockerImage.push()
     }
     sh "docker rmi ${config.repo}:${env.BUILD_ID}"
-    // sh "docker rmi ${config.registry}/${config.repo}:${env.BUILD_ID}"
 }
